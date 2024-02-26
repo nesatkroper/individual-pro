@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
+
+:root {
+  /* --color-dark-brown: #645b4c; */
+  --color-dark: #265073;
+  --color-light: #2d9596;
+  --color-white: #fff;
+  --color-black: #000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
+  /* font-family: "Poppins" !important; */
+  /* font-family: "Kode Mono", monospace !important; */
+  font-family: "Anta", sans-serif !important;
+  /* font-size: 10px !important; */
+}
+.row {
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-left: 0;
+  margin-right: 0;
+}
+.nav-top {
+  height: 50px !important;
+  background-color: var(--color-light) !important;
+  width: 100% !important;
+  /* position: fixed !important; */
+}
+.nav-top a {
+  font-size: 18px !important;
+  color: var(--color-white) !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+}
+.nav-top a:hover {
+  color: var(--color-dark) !important;
+  transform: scale(1.2) !important;
+  transition: all 0.2s !important;
+  text-decoration: underline !important;
+}
+h2.quate {
+  color: var(--color-light);
+}
+
+.nav-bottom {
+  height: 70px !important;
+  background-color: var(--color-white) !important;
+  z-index: 1;
+  /* position: sticky !important; */
+  /* top: 0 !important; */
+}
+.sticky-head {
+  z-index: 1;
+}
+
+.logo-img {
+  width: 130px !important;
+}
+.logo-img:hover {
+  transform: scale(1.05) !important;
+  transition: all 0.2s !important;
+}
+
+.flag-img {
+  width: 35px !important;
+}
+
+.dropdown {
+  font-size: 18px !important;
+  text-transform: capitalize !important;
+  color: var(--color-dark) !important;
+  z-index: 1;
+}
+.dropdown:hover {
+  color: var(--color-dark) !important;
+  transform: scale(1.05) !important;
+  transition: all 0.2s !important;
+  font-weight: bold !important;
+}
+.dropdown-menu {
+  /* display: none !important; */
+  background-color: var(--color-light) !important;
+  color: var(--color-white) !important;
+}
+.dropdown-menu a {
+  color: var(--color-white);
+  z-index: 1;
+}
+
+a {
+  text-transform: capitalize !important;
+  /* color: var(--color-dark) !important; */
+}
+/* TREND */
+img.trend-img {
+  width: 100%;
+  border-radius: 30px;
+  animation: floatImage 3s ease-in-out infinite;
+  /* height: 100%; */
+}
+img.trend-img:hover {
+  transform: scale(1.2);
+  transition: all 0.2s linear;
+}
+
+/* SLIDE SCROLLER */
+.btn_slick {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: none !important;
+  background-color: var(--color-dark);
+}
+.btn_slick svg {
+  color: var(--color-white);
+}
+.btn_prev {
+  left: 5px;
+  z-index: 1;
+}
+.btn_next {
+  right: 5px;
+  z-index: 1;
+}
+.content-item img {
+  width: 250px !important;
+  border-radius: 20px !important;
+}
+
+.btn-buy {
+  width: 250px !important;
+  height: 40px !important;
+  border: 1px solid var(--color-dark);
+  border-radius: 10px;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  margin-top: 1rem !important;
+}
+.btn-buy a {
+  text-decoration: none !important;
+  color: var(--color-white);
+}
+
+.content-item {
+  display: flex !important;
+  justify-content: center !important;
+}
+.banner-item img {
+  height: 100% !important;
+  width: 100% !important;
+}
+.btn.show {
+  border: none !important;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--color-light);
+  color: var(--color-white);
+  height: 10vh !important;
+}
+.media a {
+  padding: 0 20px;
+  font-size: 30px;
+  color: var(--color-white);
+}
+.media a:hover {
+  transform: scale(1.1);
+  transition: all 0.2s linear;
+  color: var(--color-dark);
+  text-decoration: underline;
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+    transform: scale(0.8);
+  }
+  50% {
+    transform: translateY(-1.5rem);
+    transform: scale(1);
+  }
+  100% {
+    transform: translateY(0);
+    transform: scale(0.8);
+  }
+}
